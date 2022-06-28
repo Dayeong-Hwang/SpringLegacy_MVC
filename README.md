@@ -18,5 +18,6 @@ SpringLegacy_MVC 공부
 
 ### 금융결제원 오픈API (https://developers.kftc.or.kr/dev)
 - properties 사용하여 clientID/ClientSecret 분리
+- 
 - 사용자 정보 조회
 - 등록계좌 조회

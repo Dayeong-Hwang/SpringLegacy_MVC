@@ -1,0 +1,22 @@
+CREATE DATABASE spring_web;
+
+use spring_web;
+
+CREATE TABLE member (
+	member_idx INT PRIMARY KEY AUTO_INCREMENT,
+	member_name VARCHAR(100),
+	member_id VARCHAR(100),
+	member_passwd VARCHAR(100),
+	member_birth VARCHAR(6),
+	member_email VARCHAR(100),
+	member_social_type VARCHAR(100),
+	member_social_id VARCHAR(100),
+	member_social_access_token VARCHAR(400),
+	member_join_date VARCHAR(100),
+	member_modify_date VARCHAR(400),
+	member_auth VARCHAR(100),
+	member_authstatus CHAR(1)
+);
+
+
+drop table member;

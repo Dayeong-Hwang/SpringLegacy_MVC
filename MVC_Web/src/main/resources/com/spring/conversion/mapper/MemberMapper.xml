@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.spring.conversion.mapper.MemberMapper">
+
+	<insert id="insertJoinMember">
+		INSERT INTO member
+		VALUES (null,#{member_name}, #{member_id}, #{member_passwd}, 
+				#{member_birth}, #{member_email}, null, null,null,REPLACE(now(),'-',''),null,null,null)		
+	</insert>
+	
+	<select id="selectCheckId" resultType="int">
+		SELECT COUNT(member_id) FROM member WHERE member_id = #{member_id}
+	</select>
+</mapper>
